@@ -1,0 +1,32 @@
+{
+  "name": "css-exploration-thingy",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node ./example/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crc": "^3.4.0",
+    "css": "^2.2.1",
+    "css.escape": "^1.5.0",
+    "handlebars": "^4.0.5",
+    "lodash.merge": "^4.3.4",
+    "md5": "^2.1.0",
+    "postcss": "^5.0.19",
+    "uuid": "^2.0.1"
+  },
+  "devDependencies": {
+    "chalk": "^1.1.3",
+    "glob": "^7.0.3",
+    "gulp": "^3.9.1",
+    "gulp-istanbul": "^0.10.4",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.4.5",
+    "should": "^8.3.1"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "comment": "should throw an error when an invalid/missing class name is referenced",
+  "error": "`does-not-exist` does not exist in CSS"
+}

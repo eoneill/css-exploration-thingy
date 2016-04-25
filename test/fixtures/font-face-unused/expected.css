@@ -1,0 +1,6 @@
+@font-face {
+  font-family: GlobalFont;
+  src: url('global.woff2') format('woff2');
+}
+
+/* should prune unused font-face rules */

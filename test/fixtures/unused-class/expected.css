@@ -1,0 +1,6 @@
+/* this should not be pruned because it's global */
+.global-unused {
+  global: true;
+}
+
+/* this should be pruned because `local-unused` is never used */

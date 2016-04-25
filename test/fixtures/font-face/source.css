@@ -1,0 +1,15 @@
+@font-face {
+  font-family: GlobalFont;
+  src: url('global.woff2') format('woff2');
+}
+
+@document :local {
+  @font-face {
+    font-family: MyIcons-12px;
+    src: url('MyIcons-12px.woff2') format('woff2');
+  }
+
+  .icon {
+    font-family: MyIcons-12px, GlobalFont, "Times New Roman";
+  }
+}

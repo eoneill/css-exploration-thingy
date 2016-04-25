@@ -1,0 +1,9 @@
+/* global class is untouched */
+.global-class {
+  global: true;
+}
+
+/* local class is rewritten */
+.a19g3atm__local-class {
+  local: true;
+}

@@ -1,0 +1,5 @@
+@document :local {
+  .local-class {
+    local: true;
+  }
+}

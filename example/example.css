@@ -1,0 +1,53 @@
+.some-global-class { color: red; }
+
+@font-face {
+  font-family: GlobalFont;
+  src: url('webfont.woff2') format('woff2');
+}
+
+@keyframes global-keyframe {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+@document :local {
+  @font-face {
+    font-family: MyIcons-12px;
+    src: url('MyIcons-12px.woff2') format('woff2');
+  }
+
+  :global(.some-other-global-class) { width: 100%; }
+
+  @keyframes foo {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .some-class { color: blue; }
+  .some-class * { color: grey; }
+  .some-class:not(.foo) { color: orange; }
+  .some-class[disabled] { opacity: 0.5; }
+  .some-class:first-child { color: yellow; }
+
+  .foo { color: blue; }
+  .some-class .foo { color: black; }
+  .some-class .bar { color: purple; }
+  .some-class .foo, .some-class .bar { color: cyan; }
+  .some-class .foo.bar { color: pink; }
+
+  .some-other-class { color: green; }
+  .unused-class { unused: true; }
+
+  .foo {
+    font: MyIcons-12px 24px/24px;
+    font-family:   "MyIcons-12px" , Arial, sans-serif;
+    animation-name: global-keyframe;
+    animation: foo 2s infinite;
+  }
+
+  :global(html.ie):not(:global(.ie7)) :global(.foo) .foo { color: red; }
+
+  @media screen {
+    .foo { color: red; }
+  }
+}

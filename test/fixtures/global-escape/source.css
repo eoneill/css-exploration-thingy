@@ -1,0 +1,11 @@
+@document :local {
+  /* .global-class should be untouched */
+  .local-class:not(:global(.global-class)) {
+    local: true;
+  }
+
+  /* .other-global-class should be untouched */
+  :global(.other-global-class) {
+    global: true;
+  }
+}

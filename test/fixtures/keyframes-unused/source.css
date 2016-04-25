@@ -1,0 +1,18 @@
+@keyframes global-anim {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+@document :local {
+  @keyframes local-anim {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .animate {
+    animation-name: global-anim;
+    animation: global-anim 2s infinite;
+    animation-name: local-anim;
+    animation: local-anim 2s infinite;
+  }
+}

@@ -1,0 +1,9 @@
+/* .global-class should be untouched */
+.aro370w__local-class:not(.global-class) {
+  local: true;
+}
+
+/* .other-global-class should be untouched */
+.other-global-class {
+  global: true;
+}

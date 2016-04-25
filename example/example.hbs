@@ -1,0 +1,9 @@
+{{! css.classNameBindings = foo }}
+<html class="ie {{css.global.some-global-class}}">
+  <div class="{{css.some-class}}">
+    <div class="
+      some-global-class
+      {{#if bar}}{{ css.bar }}{{/if}}
+    ">...</div>
+  </div>
+</html>

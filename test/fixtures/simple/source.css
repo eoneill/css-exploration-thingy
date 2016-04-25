@@ -1,0 +1,11 @@
+/* global class is untouched */
+.global-class {
+  global: true;
+}
+
+@document :local {
+  /* local class is rewritten */
+  .local-class {
+    local: true;
+  }
+}

@@ -1,0 +1,24 @@
+@keyframes global-anim {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes aipq5oa__local-anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.a1i4532__animate {
+  animation-name: global-anim;
+  animation: global-anim 2s infinite;
+  animation-name: aipq5oa__local-anim;
+  animation: aipq5oa__local-anim 2s infinite;
+}
